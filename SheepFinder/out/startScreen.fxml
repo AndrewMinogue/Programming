@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="startScreenController">
+  <children>
+    <HBox layoutX="0.0" layoutY="0.0" minHeight="27.0" prefHeight="27.0" prefWidth="600.0">
+      <children>
+        <MenuBar prefWidth="600.0" useSystemMenuBar="false">
+          <menus>
+            <Menu mnemonicParsing="false" text="Open New Image">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#addImage" text="Add Image" fx:id="addImage" />
+                <MenuItem mnemonicParsing="false" onAction="#changeToBlackAndWhite" text="BlackAndWhite" fx:id="blackBaby" />
+                <MenuItem mnemonicParsing="false" onAction="#countSheep" text="Count Sheep" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Exit">
+              <items>
+                <MenuItem mnemonicParsing="false" text="exit" />
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+      </children>
+    </HBox>
+    <VBox alignment="TOP_CENTER" prefHeight="240.0" prefWidth="320.0" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="46.0">
+      <children>
+        <ImageView id="Image" fx:id="imageview" fitHeight="240.0" fitWidth="320.0" pickOnBounds="true" preserveRatio="true">
+          <VBox.margin>
+            <Insets />
+          </VBox.margin>
+        </ImageView>
+      </children>
+    </VBox>
+    <Label fx:id="sheepEstimate" layoutX="14.0" layoutY="329.0" prefHeight="57.0" prefWidth="423.9999000000025" text="Label" visible="false" />
+    <Slider fx:id="sliderSheep" majorTickUnit="5.0" max="255.0" onDragDone="#changeToBlackAndWhite" onMouseClicked="#changeToBlackAndWhite" orientation="VERTICAL" prefHeight="240.0" showTickLabels="false" showTickMarks="false" snapToTicks="true" value="200.0" AnchorPane.bottomAnchor="77.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="545.0" AnchorPane.topAnchor="83.0" />
+  </children>
+  <stylesheets>
+    <URL value="@../background/style.css" />
+  </stylesheets>
+</AnchorPane>
