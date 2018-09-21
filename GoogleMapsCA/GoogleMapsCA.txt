@@ -1,0 +1,16 @@
+graphNode data Waterford
+graphNode data Dublin
+graphNode data Galway
+graphNode data Cork
+graphNode data Limerick
+graphNode data Killareny
+graphNode data Wexford
+graphLink sourceNode Dublin destNode Galway cost 208 speed 100
+graphLink sourceNode Galway destNode Limerick cost 58 speed 100
+graphLink sourceNode Limerick destNode Dublin cost 203 speed 100
+graphLink sourceNode Dublin destNode Waterford cost 171 speed 100
+graphLink sourceNode Waterford destNode Cork cost 132 speed 100
+graphLink sourceNode Dublin destNode Wexford cost 148 speed 100
+graphLink sourceNode Wexford destNode Waterford cost 60 speed 100
+graphLink sourceNode Limerick destNode Killarney cost 111 speed 100
+graphLink sourceNode Cork destNode Killarney cost 98 speed 100

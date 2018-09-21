@@ -1,0 +1,4 @@
+.bodybg {
+    -fx-background-image: url("/out/production/background/try.jpg");
+    -fx-background-size: 100% 100% ;
+}
